@@ -12,27 +12,35 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
     <div class="main-container">
         <header>
             <div class="container">
-                <div class="logo">
-                <img src="images/logo/Booki.png" alt="logo Booki">
+                <div class="logoBooki">
+                    <img class="LogoBooki" src="images/logo/Booki.png" alt="logo Booki">
                 </div>
                 <div class="navbar">
                     <nav>
-                        <a class="Hébergements" href="#">Hébergemets</a> 
-                        <a class="Activités" href="#">Activités</a>
+                        <a class="hebergementsNav" href="#">Hébergements</a> 
+                        <a class="activitesNav" href="#">Activités</a>
 
                     </nav>
                 </div>    
             </div>
         </header>
         <main>
-            <h2>Trouvez votre Hébergements pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
+            <div class="rechereche">
+                <h2>Trouvez votre Hébergements pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form class="search-bar" method="get" action="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" name="lieu-recherche" id="lieu-recherche" placeholder="Marseille , France">
+                    <button class="rechercher" type="submit" value="rechercher">Rechercher</button>
+                </form>
+            </div>
         
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -145,7 +153,7 @@
                         </article>
                     </div>
 
-                    <h3>Afficher plus</h3>
+                    <h3 class="Afficher-plus">Afficher plus</h3>
 
                 </section>
                 <section class="populaires">
@@ -155,7 +163,7 @@
                     </div> 
                     <div class="populaires-cards">
                         <article class="card">
-                            <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Le soleil du matin</h3>
