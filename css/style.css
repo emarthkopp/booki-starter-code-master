@@ -13,7 +13,7 @@
         justify-content: space-between;
 
 }  
-
+/*******header*******/
 .LogoBooki{
     height : 19px ;
     width: auto;
@@ -23,21 +23,17 @@
 
 .hebergementsNav ,.activitesNav{
    color: #000000;
-    text-decoration: none;
-    margin: 5px;
+   text-decoration: none;
+    margin: 0;
+    padding: 0;
 
 }
 .hebergementsNav:hover , .activitesNav:hover{
     color: #0065FC;
-    border-top: #0065FC 1px;
+    text-decoration:#0065FC 1px overline;
+    padding: 5px;
 }
 
-.hebergements-hover::before{
-    border-top: #0065FC 1px; 
-    width: 100%;
-    height: 5px;
-
-}
 .fa-solid {
     color: var(--main-color);
 }
@@ -45,7 +41,8 @@
 body {
     display: flex;
     justify-content: center;
-    margin: none;
+    margin-top: none;
+    padding-top: none;
 }
 
 .main-container {
@@ -56,25 +53,25 @@ body {
 }
 
 .section-title {
-    margin: 0;
+    margin: 20;
     font-size: 22px;
 }
 
-.fa-location-dot {
-    color: #000000; 
-    padding: 10px;
-    background-color: #F2F2F2;
-    border : #F2F2F2 ;
-    border-radius : 15px 0px 0px 15px ;
 
-}
 .search-bar{
     align-items: center;
     width:377px;
     height:49px ;   
     border-radius: 15px;    
     border: 1px;
-    gap: 24px
+
+}
+.fa-location-dot {
+    color: #000000; 
+    padding: 10px;
+    background-color: #F2F2F2;
+    border : #F2F2F2 ;
+    border-radius : 15px 0px 0px 15px ;
 
 }
 .rechercher{
@@ -85,16 +82,36 @@ body {
     border : none ;
     border-radius: 0 15px 15px 0;
 }
+
 input {
     width :130px;
     height : 32px ;
     color :  #000000;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    border-left: none;
-    border-right: none;
+    border: #F2F2F2 1px solid;
+}
+    .economique ,.familial , .romantique , .nospepites {
+    display: inline;
+    font-weight: 700;
+    font-size: 16;
+    background-color: white;
+    border-color: #F2F2F2 1px;
+    border-radius: 25px;
+    padding: 7px;
+    margin : 15px;
 
 }
+
+.fa-money-bill-wave , .fa-person , .fa-heart , .fa-fire{
+    padding : 7px;
+}
+
+.fa-info{
+    padding: 10px;
+    border : #000000;
+    border-radius: 15px 15px 15px 15px;
+
+}
+/*******cartes de chaque hebergement*******/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -123,6 +140,7 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .hebergements-and-populaires section {
@@ -154,7 +172,7 @@ input {
 
 .hebergements-cards .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
         flex: 0 1 30%;
     margin-top: 33px;
 }
@@ -188,6 +206,7 @@ input {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
+
 
 /****** Populaires ***********/
 .populaires {
@@ -239,7 +258,39 @@ input {
     margin: auto;
 }
 
-
+.activites{
+    width: 100%;;
+    justify-content:space-between;
+}
+.activites-cards{
+    display: flex;
+    flex-direction: row;
+}
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 33px;
+    margin: 20px;
+}
+.activites-cards img {
+    max-width : 100%;
+    height : 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activites-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+ .activites-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -274,6 +325,10 @@ input {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+    .activites{
+        width: 100%;
+        margin-top: 50px;
     }
 }
 
