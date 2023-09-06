@@ -47,19 +47,21 @@
                 <p>En plein centre ville ou en pleine nature</p>
                 <form class="search-bar" method="get" action="">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" name="lieu-recherche" id="lieu-recherche" placeholder="Marseille , France">
+                    <input class="saisie" type="text" name="lieu-recherche" id="lieu-recherche" placeholder="Marseille , France">
                     <button class="rechercher" type="submit" value="rechercher">Rechercher</button>
                 </form>
                 <div class="filtres">
-                    <h3 class="">Filtres</h3>
-                        <button class="economique"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                        <button class="familial"><i class="fa-solid fa-person"></i>Familial</button>
-                        <button class="romantique"><i class="fa-solid fa-heart"></i>Romantique</button>
-                        <button class="nospepites"><i class="fa-solid fa-fire"></i>Nos Pépites</button>
-                        <div class="dispo">
+                    <h3 class="filtresTitre">Filtres</h3>
+                    <div class="filtresButton">
+                        <button class="economique"><span class=insideButton><i class="fa-solid fa-money-bill-wave"></i>Economique</span></button>
+                        <button class="familial"><span class=insideButton><i class="fa-solid fa-person"></i>Familial</span></button>
+                        <button class="romantique"><span class=insideButton><i class="fa-solid fa-heart"></i>Romantique</span></button>
+                        <button class="nospepites"><span class=insideButton><i class="fa-solid fa-fire"></i>Nos Pépites</span></button>
+                    </div>
+                    <div class="dispo">
                             <i class="fa-solid fa-info" ></i>
                             <span>Plus de 500 logements sont disponibles dans cette ville</span>
-                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -192,7 +194,7 @@
                                     <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                 </div>
                                 <div class="card-rating">
-                                    168.453                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
