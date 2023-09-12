@@ -43,16 +43,8 @@ body {
 }
 
 .navbar{
-        align-items: flex-start;
-        
-}
-
-.navbar-xl{
+    align-items: flex-start;
     padding-top: 6px;
-}
-
-.menu-small{
-    display :none;
 }
 
 .hebergementsNav ,.activitesNav{
@@ -70,7 +62,6 @@ body {
 
 /**********recherche et filtres**********/
 .section-title {
-    margin: 20;
     font-size: 22px;
 }
 
@@ -127,7 +118,6 @@ body {
 
 .economique ,.familial , .romantique , .nospepites{
     font-weight: 700;
-    font-size: 16;
     background-color: white;
     border: var(--main-bg-color) 2px solid;
     border-radius: 25px;
@@ -416,7 +406,7 @@ body {
 
 /**** Small devices (phones, less than 768px) ****/
 
-@media screen and (min-width :321px) and (max-width : 767px) {
+@media screen and (min-width :320px) and (max-width : 767px) {
     .main-container{
         margin:0px;
     }
@@ -433,17 +423,14 @@ body {
         gap : 10px;
     }
 
-    .menu {
-        display: none;
-    }
 
-    .menu-small{
+    .menu{
         display :flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .nav-small{
+    .navbar{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -451,16 +438,9 @@ body {
         justify-content: space-between;  
     }
 
-    .navbar-small{
-        display :flex;
-        flex-direction: row;
-    }
+    
 
-    .nav-small{
-        width: 100%;
-    }
-
-    .hebergementsNav-small , .activitesNav-small{
+    .hebergementsNav , .activitesNav{
         display:flex;
         justify-content: space-evenly;
         color: #000000;
@@ -468,11 +448,14 @@ body {
         padding-bottom: 15px;
         border-bottom: #F2F2F2 2px solid;
         width: 50%;
+        margin: 0px 0px;
     }
 
-    .hebergementsNav-small:hover , .activitesNav-small:hover{
+    .hebergementsNav:hover , .activitesNav:hover{
         color: var(--main-color);
-        border-bottom: var(--main-color) 2px solid ;
+        border-bottom: var(--main-color) 2px solid;
+        border-top: none ;
+
     }
 
     h1, .sous-titre{
@@ -548,14 +531,14 @@ body {
 
     .populaires{
         width: 100%;
-        border-radius: none;
+        border-radius: 0px;
     }
 
     .populaires-cards{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width :auto auto;
+        width : auto;
         align-content: center;
     }
 
