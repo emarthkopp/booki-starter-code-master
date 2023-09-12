@@ -3,12 +3,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;  
 }
+
 .menu{
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,18 @@ body {
     gap: 35px;
 }
 
+.main-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
 /*******header*******/
 .LogoBooki {
     height : 19px ;
@@ -30,17 +42,19 @@ body {
     gap : 10px;
 }
 
-.menu-small{
-    display :none;
-}
-
 .navbar{
         align-items: flex-start;
         
 }
+
 .navbar-xl{
     padding-top: 6px;
 }
+
+.menu-small{
+    display :none;
+}
+
 .hebergementsNav ,.activitesNav{
    color: #000000;
    text-decoration: none;
@@ -52,52 +66,14 @@ body {
 .hebergementsNav:hover ,.activitesNav:hover{
     color: var(--main-color);
     border-top: var(--main-color) 3px solid;
- 
 }
 
-/** {
-  color: black;
-  text-decoration:none;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  }
-nav a:hover
-    {
-    text-decoration: none;
-    color:#0065FC;
-    border-top: 2px solid #0065FC;
-    }
-    .hebergementsNav-small , .activitesNav-small{
-        display:flex;
-        justify-content: space-evenly;
-        color: #000000;
-        text-decoration : none;
-        padding-bottom: 15px;
-        border-bottom: #F2F2F2 2px solid;
-        width: 50%;
-    }
-    .hebergementsNav-small:hover , .activitesNav-small:hover{
-        color: var(--main-color);
-        border-bottom: var(--main-color) 2px solid ;
-    }**/
-.fa-solid {
-    color: var(--main-color);
-}
-
-.main-container {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100%;
-    max-width: 1440px;
-    box-sizing: border-box;
-}
-
+/**********recherche et filtres**********/
 .section-title {
     margin: 20;
     font-size: 22px;
 }
+
 .search-bar{
     display: flex;
     height:49px ;    
@@ -121,6 +97,7 @@ nav a:hover
     font-size: 18px;
     font-weight: 700;
 }
+
 .rechercherSmall{
     display: none;
 }
@@ -136,13 +113,14 @@ nav a:hover
     font-size: 18px;
     font-weight: 700;
     text-decoration: #000000;
-    text-align: center;
-    
+    text-align: center;   
 }
+
 .filtres{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .filtresTitre , .filtresButton {
     display: inline;
 }
@@ -159,7 +137,6 @@ nav a:hover
 
 .economique:hover ,.familial:hover , .romantique:hover , .nospepites:hover{
     background-color: var( --filter-bg-color) ;
-
 }
 
 .fa-money-bill-wave , .fa-person , .fa-heart , .fa-fire{
@@ -173,6 +150,7 @@ nav a:hover
     align-items: center;
     gap : 10px ;
 }
+
 .fa-info{
     padding-left: 10px;
     padding-right: 10px;
@@ -327,6 +305,8 @@ nav a:hover
     margin-bottom: 5px;
 }
 
+ /******* Activites *******/
+
 .activites {
     width: 100%;
 }
@@ -364,24 +344,26 @@ nav a:hover
    padding-left: 15px;
 }
 
-.footer{
+ /******* footer *******/
+
+ .footer{
     margin-top: 20px;
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction:row;
     justify-content: flex-start;
-    gap: 15%;
-    
+    gap: 15%;  
 }
+
  .APropos , .NosHebergements , .Assistance {
     padding-left: 3%;
     display: flex;
     flex-direction: column;
  }
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+
+/**** Medium devices (tablets, less/equal than 1024px) ****/
 @media screen and (min-width:768px) and (max-width: 1024px) {
     .menu-small{
         display: none;
@@ -417,6 +399,7 @@ nav a:hover
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    
     .activites{
         width: 100%;
         margin-top: 50px;
@@ -426,14 +409,18 @@ nav a:hover
 .activite-card img {
     height: 200px;
 }
+
 .footer{
    gap : 10%
 }
-/* Small devices (phones, less than 768px) */
+
+/**** Small devices (phones, less than 768px) ****/
+
 @media screen and (min-width :321px) and (max-width : 767px) {
     .main-container{
         margin:0px;
     }
+
     .logoBooki-small{
         display: flex;
         justify-content: center;
@@ -445,29 +432,34 @@ nav a:hover
         padding: 30px 50px 30px 50px ;
         gap : 10px;
     }
+
     .menu {
         display: none;
     }
+
     .menu-small{
         display :flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .nav-small{
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
     }
+
     .navbar-small{
         display :flex;
         flex-direction: row;
     }
+
     .nav-small{
         width: 100%;
     }
+
     .hebergementsNav-small , .activitesNav-small{
         display:flex;
         justify-content: space-evenly;
@@ -477,10 +469,12 @@ nav a:hover
         border-bottom: #F2F2F2 2px solid;
         width: 50%;
     }
+
     .hebergementsNav-small:hover , .activitesNav-small:hover{
         color: var(--main-color);
         border-bottom: var(--main-color) 2px solid ;
     }
+
     h1, .sous-titre{
         padding: 0px 10px;
     }
@@ -489,6 +483,7 @@ nav a:hover
         display: flex;
         justify-content: center;
     }
+
     .rechercher{
         display: none;
     }
@@ -505,6 +500,7 @@ nav a:hover
         border-radius :15px ;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+
     .fa-magnifying-glass{
         color: white;
         padding: 15px 16px;
@@ -514,6 +510,7 @@ nav a:hover
     .filtresTitre{
         margin-left: 10px;
     }
+
     .filtresButton{
         margin-top: 10px;
         display : flex;
@@ -527,11 +524,13 @@ nav a:hover
         min-width :151px;
         height: auto;
     }
+
     .insideButton{
         display: flex;
         justify-content:flex-start;
         align-items: center;
     }
+
     .dispo{
         margin-left: 10px;
     }
@@ -542,6 +541,7 @@ nav a:hover
         align-items: center;
         
     }
+
     .hebergements-and-populaires section{
         border-radius: 0px;
     }
@@ -550,6 +550,7 @@ nav a:hover
         width: 100%;
         border-radius: none;
     }
+
     .populaires-cards{
         display: flex;
         flex-direction: column;
@@ -557,6 +558,7 @@ nav a:hover
         width :auto auto;
         align-content: center;
     }
+
     .populaires-cards .card{
         display: flex;
         flex-direction: row;
@@ -569,6 +571,7 @@ nav a:hover
         width: 100%;
         --main-bg-color :white; 
     }
+
     .hebergements .fa-chart-line{
         display: none;
     }
@@ -605,24 +608,27 @@ nav a:hover
         justify-content: space-between;
         box-sizing: border-box;
     }
+
     .activites{
         display: flex;
         flex-direction: column;
     }
+
     .activite-card{
         width : 90%;
     }
+
     .activites-cards{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .footer{
         display: flex;
         flex-direction: column;
         padding : 10px 0px 30px 10px;
-    }
-    
+    } 
 
 }
 
