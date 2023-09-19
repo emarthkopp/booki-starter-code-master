@@ -277,6 +277,10 @@ main {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
+.Afficher-plus{
+    font-size: 16;
+    font-weight: 700;
+}
 
 .Afficher-plus:hover {
     color: var(--main-color);
@@ -388,13 +392,16 @@ main {
     margin: 50px;
 }
 
-.APropos,
-.NosHebergements,
-.Assistance {
+.footerPart {
     display: flex;
     flex-direction: column;
     padding: 20px 20px;
     width: 33%;
+}
+
+.footerTitle{
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .text-footer {
@@ -677,10 +684,6 @@ main {
         margin: 0 0 15px 20px;
     }
 
-    .hebergements .fa-chart-line {
-        display: none;
-    }
-
     .hebergements-cards {
         display: flex;
         flex-direction: column;
@@ -744,7 +747,7 @@ main {
     }
 
     .Afficher-plus {
-        margin: 0;
+        margin-left: 25px;
     }
 
     .activites {
@@ -784,9 +787,7 @@ main {
         margin: 0;
     }
 
-    .APropos,
-    .NosHebergements,
-    .Assistance {
+    .footerPart {
         margin-bottom: 30px;
         width: auto;
     }
