@@ -1,2 +1,2 @@
-https://emarthkopp.github.io/booki-stater-code-master
+https://emarthkopp.github/booki-stater-code-master
 
